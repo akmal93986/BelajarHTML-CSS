@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tentang Kami - BelajarRPL</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #3498db, #2ecc71); /* Biru ke hijau */
+      color: white;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    nav {
+      background-color: rgba(44, 62, 80, 0.95);
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    nav .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      color: #1abc9c;
+    }
+
+    .tentang-section {
+      max-width: 900px;
+      margin: 3rem auto;
+      background: white;
+      color: #333;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    }
+
+    .tentang-section h1 {
+      text-align: center;
+      color: #2c3e50;
+      margin-bottom: 1.5rem;
+    }
+
+    .tentang-section p {
+      font-size: 1.05rem;
+      line-height: 1.7;
+      margin-bottom: 1rem;
+      text-align: justify;
+    }
+
+    footer {
+      background-color: rgba(44, 62, 80, 0.95);
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: auto;
+    }
+
+    @media (max-width: 768px) {
+      nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 1rem;
+      }
+
+      .tentang-section {
+        margin: 2rem 1rem;
+        padding: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="logo">BelajarRPL</div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="materi.html">Materi</a></li>
+      <li><a href="tentang.html">Tentang</a></li>
+      <li><a href="Kontak.html">Kontak</a></li>
+    </ul>
+  </nav>
+
+  <section class="tentang-section">
+    <h1>Tentang Kami</h1>
+    <p><strong>BelajarRPL</strong> adalah website edukasi kreatif yang dirancang untuk siswa SMK jurusan RPL. Saya menyajikan materi HTML, CSS, JavaScript, serta logika pemrograman dengan cara yang mudah dipahami dan menyenangkan.</p>
+    
+    <p>Website ini dibuat oleh <strong>Akmal Fajar Nugraha (saya sendiri)</strong>, saya pelajar RPL yang ingin membantu teman-teman sejurusan belajar coding tanpa ribet. Semua konten dioptimalkan agar cocok untuk pemula dan langsung bisa dipraktikkan.</p>
+    
+    <p>Visi saya adalah membentuk generasi programmer muda yang berani berkreasi, berpikir logis, dan siap bersaing di dunia industri digital, semoga adanya ini dapat membantu kalian semua, jika ada kekurangan boleh hubungi saya no telepon ada di pojok kanan atas tepatnya di navbar, SEKIAN TERIMA KASIH</p>
+  </section>
+
+  <footer>
+    &copy; 2025 BelajarRPL. Dibuat oleh Akmal Fajar Nugraha.
+  </footer>
+
+</body>
+</html>

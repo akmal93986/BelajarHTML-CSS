@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Belajar CSS Dasar - BelajarRPL</title>
+  <link rel="stylesheet" href="../style.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom right, #00c6ff, #0072ff);
+      color: #fff;
+    }
+
+    nav {
+      background: linear-gradient(to right, #00c6ff, #00ff99);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+    }
+
+    nav .logo {
+      font-weight: bold;
+      font-size: 1.5rem;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav ul li a:hover {
+      text-decoration: underline;
+    }
+
+    .materi-container {
+      max-width: 900px;
+      margin: 3rem auto;
+      padding: 2rem;
+      background: white;
+      color: black;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+
+    .materi-container h1 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .materi-container h2 {
+      margin-top: 2rem;
+      color: #2c3e50;
+    }
+
+    .materi-container p {
+      margin: 0.75rem 0;
+    }
+
+    pre {
+      background: #f5f5f5;
+      padding: 1rem;
+      border-radius: 8px;
+      overflow-x: auto;
+    }
+
+    code {
+      font-family: monospace;
+      color: #2980b9;
+    }
+
+    .button-group {
+      margin-top: 3rem;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .button-group a {
+      text-decoration: none;
+      background: linear-gradient(to right, #00c6ff, #00ff99);
+      color: white;
+      padding: 0.75rem 1.5rem;
+      border-radius: 8px;
+      transition: background 0.3s;
+    }
+
+    .button-group a:hover {
+      opacity: 0.9;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      margin-top: 3rem;
+      background: rgba(0, 0, 0, 0.2);
+      color: white;
+    }
+
+    @media (max-width: 768px) {
+      nav ul {
+        flex-direction: column;
+        gap: 1rem;
+      }
+
+      .button-group {
+        flex-direction: column;
+        gap: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="logo"><strong>BelajarRPL</strong></div>
+    <ul>
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="#">Materi</a></li>
+      <li><a href="#">Quiz</a></li>
+      <li><a href="#">Tentang</a></li>
+      <li><a href="#">Kontak</a></li>
+    </ul>
+  </nav>
+
+  <div class="materi-container">
+    <h1>Belajar CSS Dasar</h1>
+    <p>CSS (Cascading Style Sheets) adalah bahasa untuk mengatur tampilan elemen HTML. Dengan CSS, kita bisa mengubah warna, ukuran, posisi, dan banyak lagi.</p>
+
+    <h2>1. Menyisipkan CSS</h2>
+    <p>CSS bisa ditulis di tiga tempat:</p>
+    <ul>
+      <li><strong>Inline</strong>: langsung di tag HTML</li>
+      <li><strong>Internal</strong>: di dalam tag <code>&lt;style&gt;</code> di head</li>
+      <li><strong>Eksternal</strong>: file .css terpisah dan dihubungkan via <code>&lt;link&gt;</code></li>
+    </ul>
+    <pre><code>&lt;style&gt;
+  body {
+    background-color: lightblue;
+  }
+&lt;/style&gt;</code></pre>
+
+    <h2>2. Selektor</h2>
+    <p>Digunakan untuk memilih elemen yang akan di-style:</p>
+    <pre><code>p {
+  color: red;
+}</code></pre>
+
+    <h2>3. Properti Umum</h2>
+    <p>Contoh properti CSS dasar:</p>
+    <pre><code>h1 {
+  font-size: 24px;
+  color: blue;
+  text-align: center;
+}</code></pre>
+
+    <h2>4. Class dan ID</h2>
+    <p>Kita bisa memberikan class atau id agar elemen lebih spesifik:</p>
+    <pre><code>&lt;p class="teks-merah"&gt;Ini teks merah&lt;/p&gt;
+
+.teks-merah {
+  color: red;
+}</code></pre>
+
+    <div class="button-group">
+      <a href="Js.html">Next: Materi JavaScript</a>
+      <a href="html.html">Kembali ke HTML</a>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 BelajarRPL. Tetap semangat belajar!
+  </footer>
+
+</body>
+</html>

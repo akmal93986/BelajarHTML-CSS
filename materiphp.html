@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Materi PHP Dasar - BelajarRPL</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #3498db, #2ecc71);
+      color: #fff;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: rgba(0, 0, 0, 0.6);
+      padding: 1rem 2rem;
+    }
+
+    nav .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav ul li a:hover {
+      text-decoration: underline;
+    }
+
+    .materi-container {
+      max-width: 900px;
+      margin: 3rem auto;
+      padding: 2rem;
+      background: white;
+      color: #333;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .materi-container h1, h2 {
+      color: #2c3e50;
+    }
+
+    pre {
+      background: #f0f0f0;
+      padding: 1rem;
+      border-radius: 8px;
+      overflow-x: auto;
+    }
+
+    code {
+      font-family: monospace;
+      color: #c0392b;
+    }
+
+    .button-group {
+      margin-top: 3rem;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .button-group a {
+      text-decoration: none;
+      background: #2c3e50;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      border-radius: 8px;
+      transition: background 0.3s;
+    }
+
+    .button-group a:hover {
+      background: #1abc9c;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="logo">BelajarRPL</div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="materi.html">Materi</a></li>
+      <li><a href="tentang.html">Tentang</a></li>
+      <li><a href="kontak.html">Kontak</a></li>
+    </ul>
+  </nav>
+
+  <div class="materi-container">
+    <h1>Belajar PHP Dasar</h1>
+    <p>PHP (Hypertext Preprocessor) adalah bahasa pemrograman sisi server yang digunakan untuk mengembangkan aplikasi web dinamis. Yuk kita mulai!</p>
+
+    <h2>1. Struktur Dasar PHP</h2>
+    <pre><code>&lt;?php
+echo "Halo, dunia!";
+?&gt;</code></pre>
+
+    <h2>2. Variabel dan Tipe Data</h2>
+    <pre><code>&lt;?php
+$nama = "Akmal";
+$umur = 17;
+$tinggi = 1.7;
+$aktif = true;
+?&gt;</code></pre>
+
+    <h2>3. Percabangan</h2>
+    <pre><code>&lt;?php
+if ($umur &gt;= 17) {
+  echo "Sudah cukup umur";
+} else {
+  echo "Masih di bawah umur";
+}
+?&gt;</code></pre>
+
+    <h2>4. Perulangan</h2>
+    <pre><code>&lt;?php
+for ($i = 1; $i &lt;= 5; $i++) {
+  echo "Angka $i &lt;br&gt;";
+}
+?&gt;</code></pre>
+
+    <h2>5. Form dan $_POST</h2>
+    <pre><code>&lt;form method="post"&gt;
+  Nama: &lt;input type="text" name="nama"&gt;
+  &lt;input type="submit"&gt;
+&lt;/form&gt;
+
+&lt;?php
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+  $nama = $_POST["nama"];
+  echo "Halo, $nama!";
+}
+?&gt;</code></pre>
+
+    <div class="button-group">
+      <a href="materihtml.html">← Kembali ke HTML</a>
+      <a href="materi.html">Kembali ke Daftar Materi</a>
+    </div>
+  </div>
+
+</body>
+</html>
